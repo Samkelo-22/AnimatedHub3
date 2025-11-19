@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimatedHub - Submit Your Animation</title>
+    <meta name="description" content="Submit your animation to AnimatedHub. Share your creative work with our community of animators and enthusiasts.">
+    <meta name="keywords" content="animation submission, upload animation, share animation, animation portfolio">
+    <meta name="author" content="AnimatedHub">
+    <link rel="stylesheet" href="seo_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>AnimatedHub</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            
+            <div class="theme-toggle">
+                <input type="checkbox" id="darkModeToggle" />
+                <label for="darkModeToggle" class="toggle-label">
+                    <span class="icon sun">🌞</span>
+                    <span class="icon moon">🌙</span>
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="submit" class="page-section animate-fade-in">
+            <h2>Submit Your Animation</h2>
+           
+            <form id="submissionForm" action="#" method="post">
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <label for="title">Title:</label>
+                    <input id="title" name="title" type="text" required>
+                    
+                    <label for="creator">Creator Name(s):</label>
+                    <input id="creator" name="creator" type="text" required>
+                    
+                    <label for="email">Contact Email:</label>
+                    <input id="email" name="email" type="email" required>
+                    
+                    <label for="category">Animation Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="2d">2D Animation</option>
+                        <option value="3d">3D Animation</option>
+                        <option value="stop-motion">Stop Motion</option>
+                        <option value="motion-graphics">Motion Graphics</option>
+                        <option value="experimental">Experimental</option>
+                    </select>
+                    
+                    <label for="runtime">Runtime (minutes):</label>
+                    <input id="runtime" name="runtime" type="number" min="0.1" max="60" step="0.1" required>
+                    
+                    <label for="software">Primary Software Used:</label>
+                    <input id="software" name="software" type="text" placeholder="e.g., Blender, After Effects, Toon Boom">
+                    
+                    <label for="desc">Short Description:</label>
+                    <textarea id="desc" name="desc" rows="5" placeholder="Describe your animation, inspiration, and techniques used..." required></textarea>
+                    
+                    <label for="link">Video Link (Vimeo/YouTube/Other):</label>
+                    <input id="link" name="link" type="url" placeholder="https://..." required>
+                    
+                    <label for="portfolio">Portfolio Link (Optional):</label>
+                    <input id="portfolio" name="portfolio" type="url" placeholder="https://...">
+                    
+                    <label for="rights">
+                        <input id="rights" name="rights" type="checkbox" required> 
+                        I confirm I have the right to submit this content and agree to the <a href="#" style="color: #667eea;">Terms of Service</a>.
+                    </label>
+                </fieldset>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="https://eera-ecer.de/fileadmin/user_upload/Pictures/ECER_Logos_and_Pictures/ECER_General_only/Submit.jpg" 
+                         alt="Submission process" style="max-height: 300px;">
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="cta-button">Submit Animation</button>
+                </div>
+            </form>
+
+            <div style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+                <h3>Submission Guidelines</h3>
+                <ul>
+                    <li>Maximum file size: 500MB</li>
+                    <li>Accepted formats: MP4, MOV, AVI</li>
+                    <li>Minimum resolution: 720p</li>
+                    <li>Include proper credits for all contributors</li>
+                    <li>Allow 2-3 business days for review</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AnimatedHub — Empowering Animators Worldwide</p>
+        <p>Email: info@animatedhub.com</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
